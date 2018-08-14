@@ -38,3 +38,11 @@ class ImpressumPage(Page):
     ])
     content_panels = Page.content_panels + [
         StreamFieldPanel('content')]
+
+class DatenschutzPage(Page):
+    content = StreamField([
+        ("Datenschutzerklaerung", blocks.RichTextBlock())
+    ])
+    content_panels = Page.content_panels + [
+        StreamFieldPanel('content')]
+

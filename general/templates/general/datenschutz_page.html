@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load wagtailcore_tags %}
+{% block content %}
+<section id="one" class="wrapper">
+    <div class="inner">
+      {% for block in page.content %}
+        <p>{{block.value}}</p>
+      {% endfor %}
+    </div>
+</section>
+{% endblock content %}

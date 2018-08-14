@@ -4,18 +4,6 @@ from wagtail.wagtailcore.models import Page
 
 from ls.joyous.models import CalendarPage
 
-
-class EventPage(Page):
-    start = models.DateTimeField()
-    intro = models.CharField(max_length=250)
-    description = models.TextField()
-
-    content_panels = Page.content_panels + [
-        FieldPanel('start'),
-        FieldPanel('intro'),
-        FieldPanel('description'),
-    ]
-
 # Create a demo version of the Calendar
 CalendarPage.is_creatable = False
 
