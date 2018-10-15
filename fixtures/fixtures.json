@@ -1,0 +1,1257 @@
+[
+{
+  "model": "wagtailcore.site",
+  "pk": 2,
+  "fields": {
+    "hostname": "localhost",
+    "port": 80,
+    "site_name": null,
+    "root_page": 3,
+    "is_default_site": true
+  }
+},
+{
+  "model": "wagtailcore.collection",
+  "pk": 1,
+  "fields": {
+    "path": "0001",
+    "depth": 1,
+    "numchild": 0,
+    "name": "Root"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 1,
+  "fields": {
+    "name": "Mitgliedsantrag",
+    "slug": "mitgliedsantrag"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 2,
+  "fields": {
+    "name": "Satzung",
+    "slug": "satzung"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 3,
+  "fields": {
+    "name": "Gesch\u00e4ftsordnung",
+    "slug": "geschaftsordnung"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 4,
+  "fields": {
+    "name": "Gr\u00fcndungsprotokoll",
+    "slug": "grundungsprotokoll"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 5,
+  "fields": {
+    "name": "Protokoll",
+    "slug": "protokoll"
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 1,
+  "fields": {
+    "tag": 1,
+    "content_type": [
+      "wagtaildocs",
+      "document"
+    ],
+    "object_id": 1
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 2,
+  "fields": {
+    "tag": 2,
+    "content_type": [
+      "wagtaildocs",
+      "document"
+    ],
+    "object_id": 2
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 3,
+  "fields": {
+    "tag": 2,
+    "content_type": [
+      "wagtaildocs",
+      "document"
+    ],
+    "object_id": 3
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 4,
+  "fields": {
+    "tag": 3,
+    "content_type": [
+      "wagtaildocs",
+      "document"
+    ],
+    "object_id": 4
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 5,
+  "fields": {
+    "tag": 3,
+    "content_type": [
+      "wagtaildocs",
+      "document"
+    ],
+    "object_id": 5
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 8,
+  "fields": {
+    "tag": 5,
+    "content_type": [
+      "wagtaildocs",
+      "document"
+    ],
+    "object_id": 8
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 9,
+  "fields": {
+    "tag": 5,
+    "content_type": [
+      "wagtaildocs",
+      "document"
+    ],
+    "object_id": 9
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 10,
+  "fields": {
+    "tag": 5,
+    "content_type": [
+      "wagtaildocs",
+      "document"
+    ],
+    "object_id": 10
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 11,
+  "fields": {
+    "tag": 5,
+    "content_type": [
+      "wagtaildocs",
+      "document"
+    ],
+    "object_id": 11
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 12,
+  "fields": {
+    "tag": 5,
+    "content_type": [
+      "wagtaildocs",
+      "document"
+    ],
+    "object_id": 12
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 13,
+  "fields": {
+    "tag": 5,
+    "content_type": [
+      "wagtaildocs",
+      "document"
+    ],
+    "object_id": 13
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 14,
+  "fields": {
+    "tag": 5,
+    "content_type": [
+      "wagtaildocs",
+      "document"
+    ],
+    "object_id": 14
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 1,
+  "fields": {
+    "name": "Moderators",
+    "permissions": [
+      [
+        "access_admin",
+        "wagtailadmin",
+        "admin"
+      ],
+      [
+        "add_document",
+        "wagtaildocs",
+        "document"
+      ],
+      [
+        "change_document",
+        "wagtaildocs",
+        "document"
+      ],
+      [
+        "delete_document",
+        "wagtaildocs",
+        "document"
+      ],
+      [
+        "add_image",
+        "wagtailimages",
+        "image"
+      ],
+      [
+        "change_image",
+        "wagtailimages",
+        "image"
+      ],
+      [
+        "delete_image",
+        "wagtailimages",
+        "image"
+      ]
+    ]
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 2,
+  "fields": {
+    "name": "Editors",
+    "permissions": [
+      [
+        "access_admin",
+        "wagtailadmin",
+        "admin"
+      ],
+      [
+        "add_document",
+        "wagtaildocs",
+        "document"
+      ],
+      [
+        "change_document",
+        "wagtaildocs",
+        "document"
+      ],
+      [
+        "delete_document",
+        "wagtaildocs",
+        "document"
+      ],
+      [
+        "add_image",
+        "wagtailimages",
+        "image"
+      ],
+      [
+        "change_image",
+        "wagtailimages",
+        "image"
+      ],
+      [
+        "delete_image",
+        "wagtailimages",
+        "image"
+      ]
+    ]
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$100000$FKoGhHZ7Wvij$z0EoDyqD92ZEYquqGOPF70KQQXztLGGNR7c1ubTBZR0=",
+    "last_login": "2018-08-26T19:01:01.103Z",
+    "is_superuser": true,
+    "username": "bocian67",
+    "first_name": "",
+    "last_name": "",
+    "email": "wladi.schneider13@googlemail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2018-05-13T19:35:25.411Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$100000$Pqet4mKC1zY8$r7pM0L/WGRLm3axKpzWFG8RI0aYdDUpkARr915gCPXU=",
+    "last_login": "2018-08-13T16:28:38.035Z",
+    "is_superuser": false,
+    "username": "maxe",
+    "first_name": "Maxe",
+    "last_name": "85",
+    "email": "maxe85@web.de",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2018-08-13T16:27:03.667Z",
+    "groups": [
+      [
+        "Editors"
+      ]
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$100000$gbTWpMMRsCqg$4vYgy8MYO0bQWubhiloV1r0eHedTGmKNtnXhlEnXelQ=",
+    "last_login": null,
+    "is_superuser": true,
+    "username": "phantomix",
+    "first_name": "phantomix",
+    "last_name": "phantomix",
+    "email": "phantomix@macht-albern.de",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2018-08-20T16:38:29.708Z",
+    "groups": [
+      [
+        "Moderators"
+      ],
+      [
+        "Editors"
+      ]
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "wagtailcore.grouppagepermission",
+  "pk": 1,
+  "fields": {
+    "group": [
+      "Moderators"
+    ],
+    "page": 1,
+    "permission_type": "add"
+  }
+},
+{
+  "model": "wagtailcore.grouppagepermission",
+  "pk": 2,
+  "fields": {
+    "group": [
+      "Moderators"
+    ],
+    "page": 1,
+    "permission_type": "edit"
+  }
+},
+{
+  "model": "wagtailcore.grouppagepermission",
+  "pk": 3,
+  "fields": {
+    "group": [
+      "Moderators"
+    ],
+    "page": 1,
+    "permission_type": "publish"
+  }
+},
+{
+  "model": "wagtailcore.grouppagepermission",
+  "pk": 4,
+  "fields": {
+    "group": [
+      "Editors"
+    ],
+    "page": 1,
+    "permission_type": "add"
+  }
+},
+{
+  "model": "wagtailcore.grouppagepermission",
+  "pk": 5,
+  "fields": {
+    "group": [
+      "Editors"
+    ],
+    "page": 1,
+    "permission_type": "edit"
+  }
+},
+{
+  "model": "wagtailcore.grouppagepermission",
+  "pk": 6,
+  "fields": {
+    "group": [
+      "Moderators"
+    ],
+    "page": 1,
+    "permission_type": "lock"
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 1,
+  "fields": {
+    "path": "0001",
+    "depth": 1,
+    "numchild": 1,
+    "title": "Root",
+    "draft_title": "Root",
+    "slug": "root",
+    "content_type": [
+      "wagtailcore",
+      "page"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/",
+    "owner": null,
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": null,
+    "last_published_at": null,
+    "latest_revision_created_at": null,
+    "live_revision": null
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 3,
+  "fields": {
+    "path": "00010001",
+    "depth": 2,
+    "numchild": 6,
+    "title": "Home",
+    "draft_title": "Home",
+    "slug": "home",
+    "content_type": [
+      "home",
+      "homepage"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/",
+    "owner": null,
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": null,
+    "last_published_at": null,
+    "latest_revision_created_at": null,
+    "live_revision": null
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 4,
+  "fields": {
+    "path": "000100010001",
+    "depth": 3,
+    "numchild": 0,
+    "title": "Dokumente",
+    "draft_title": "Dokumente",
+    "slug": "dokumente",
+    "content_type": [
+      "general",
+      "dokumentepage"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/dokumente/",
+    "owner": [
+      "bocian67"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2018-05-13T20:17:56.543Z",
+    "last_published_at": "2018-08-20T16:41:25.233Z",
+    "latest_revision_created_at": "2018-08-20T16:41:25.002Z",
+    "live_revision": 31
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 5,
+  "fields": {
+    "path": "000100010002",
+    "depth": 3,
+    "numchild": 0,
+    "title": "Impressum",
+    "draft_title": "Impressum",
+    "slug": "impressum",
+    "content_type": [
+      "general",
+      "impressumpage"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/impressum/",
+    "owner": [
+      "bocian67"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2018-05-13T20:20:50.489Z",
+    "last_published_at": "2018-05-13T20:20:50.489Z",
+    "latest_revision_created_at": "2018-05-13T20:20:50.140Z",
+    "live_revision": 5
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 6,
+  "fields": {
+    "path": "000100010003",
+    "depth": 3,
+    "numchild": 0,
+    "title": "Girokonto",
+    "draft_title": "Girokonto",
+    "slug": "girokonto",
+    "content_type": [
+      "general",
+      "giropage"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/girokonto/",
+    "owner": [
+      "bocian67"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2018-05-13T20:21:41.951Z",
+    "last_published_at": "2018-05-13T20:21:41.951Z",
+    "latest_revision_created_at": "2018-05-13T20:21:41.775Z",
+    "live_revision": 7
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 9,
+  "fields": {
+    "path": "000100010005",
+    "depth": 3,
+    "numchild": 4,
+    "title": "Kalender",
+    "draft_title": "Kalender",
+    "slug": "events",
+    "content_type": [
+      "joyous",
+      "calendarpage"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/events/",
+    "owner": [
+      "bocian67"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2018-05-13T20:38:37.973Z",
+    "last_published_at": "2018-05-13T20:38:37.973Z",
+    "latest_revision_created_at": "2018-05-13T20:38:37.826Z",
+    "live_revision": 11
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 10,
+  "fields": {
+    "path": "0001000100050001",
+    "depth": 4,
+    "numchild": 0,
+    "title": "Bitcoin Themenabend",
+    "draft_title": "Bitcoin Themenabend",
+    "slug": "bitcoin-themenabend",
+    "content_type": [
+      "joyous",
+      "recurringeventpage"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/events/bitcoin-themenabend/",
+    "owner": [
+      "bocian67"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2018-05-13T20:41:41.437Z",
+    "last_published_at": "2018-05-13T20:48:31.038Z",
+    "latest_revision_created_at": "2018-05-13T20:48:30.869Z",
+    "live_revision": 21
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 11,
+  "fields": {
+    "path": "0001000100050002",
+    "depth": 4,
+    "numchild": 4,
+    "title": "Programmier-Gruppe",
+    "draft_title": "Programmier-Gruppe",
+    "slug": "programmier-gruppe",
+    "content_type": [
+      "joyous",
+      "recurringeventpage"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/events/programmier-gruppe/",
+    "owner": [
+      "bocian67"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2018-05-13T20:43:22.453Z",
+    "last_published_at": "2018-08-26T19:01:26.631Z",
+    "latest_revision_created_at": "2018-08-26T19:01:26.393Z",
+    "live_revision": 32
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 12,
+  "fields": {
+    "path": "0001000100050003",
+    "depth": 4,
+    "numchild": 0,
+    "title": "Hardwarebastelrunde",
+    "draft_title": "Hardwarebastelrunde",
+    "slug": "hardwarebastelrunde",
+    "content_type": [
+      "joyous",
+      "recurringeventpage"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/events/hardwarebastelrunde/",
+    "owner": [
+      "bocian67"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2018-05-13T20:44:33.940Z",
+    "last_published_at": "2018-05-13T20:47:43.379Z",
+    "latest_revision_created_at": "2018-05-13T20:47:43.202Z",
+    "live_revision": 18
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 13,
+  "fields": {
+    "path": "0001000100050004",
+    "depth": 4,
+    "numchild": 0,
+    "title": "Techniksprechstunde",
+    "draft_title": "Techniksprechstunde",
+    "slug": "techniksprechstunde",
+    "content_type": [
+      "joyous",
+      "recurringeventpage"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/events/techniksprechstunde/",
+    "owner": [
+      "bocian67"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2018-05-13T20:46:29.879Z",
+    "last_published_at": "2018-05-13T20:47:27.326Z",
+    "latest_revision_created_at": "2018-05-13T20:47:27.143Z",
+    "live_revision": 17
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 14,
+  "fields": {
+    "path": "000100010006",
+    "depth": 3,
+    "numchild": 0,
+    "title": "Datenschutz",
+    "draft_title": "Datenschutz",
+    "slug": "datenschutz",
+    "content_type": [
+      "general",
+      "datenschutzpage"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/datenschutz/",
+    "owner": [
+      "bocian67"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2018-05-22T18:52:10.538Z",
+    "last_published_at": "2018-05-22T18:55:33.570Z",
+    "latest_revision_created_at": "2018-05-22T18:55:33.384Z",
+    "live_revision": 24
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 16,
+  "fields": {
+    "path": "00010001000500020002",
+    "depth": 5,
+    "numchild": 0,
+    "title": "Cancellation for Monday 9th of July",
+    "draft_title": "Cancellation for Monday 9th of July",
+    "slug": "2018-07-09-cancellation",
+    "content_type": [
+      "joyous",
+      "cancellationpage"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/events/programmier-gruppe/2018-07-09-cancellation/",
+    "owner": [
+      "bocian67"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2018-07-09T06:49:47.111Z",
+    "last_published_at": "2018-07-09T06:49:47.111Z",
+    "latest_revision_created_at": "2018-07-09T06:49:46.956Z",
+    "live_revision": 26
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 17,
+  "fields": {
+    "path": "00010001000500020003",
+    "depth": 5,
+    "numchild": 0,
+    "title": "Cancellation for Monday 16th of July",
+    "draft_title": "Cancellation for Monday 16th of July",
+    "slug": "2018-07-16-cancellation",
+    "content_type": [
+      "joyous",
+      "cancellationpage"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/events/programmier-gruppe/2018-07-16-cancellation/",
+    "owner": [
+      "bocian67"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2018-07-09T06:51:42.879Z",
+    "last_published_at": "2018-07-09T06:51:42.879Z",
+    "latest_revision_created_at": "2018-07-09T06:51:42.724Z",
+    "live_revision": 27
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 18,
+  "fields": {
+    "path": "00010001000500020004",
+    "depth": 5,
+    "numchild": 0,
+    "title": "Cancellation for Monday 23rd of July",
+    "draft_title": "Cancellation for Monday 23rd of July",
+    "slug": "2018-07-23-cancellation",
+    "content_type": [
+      "joyous",
+      "cancellationpage"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/events/programmier-gruppe/2018-07-23-cancellation/",
+    "owner": [
+      "bocian67"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2018-07-09T06:52:12.461Z",
+    "last_published_at": "2018-07-09T06:52:12.461Z",
+    "latest_revision_created_at": "2018-07-09T06:52:12.281Z",
+    "live_revision": 28
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 19,
+  "fields": {
+    "path": "00010001000500020005",
+    "depth": 5,
+    "numchild": 0,
+    "title": "Cancellation for Monday 6th of August",
+    "draft_title": "Cancellation for Monday 6th of August",
+    "slug": "2018-08-06-cancellation",
+    "content_type": [
+      "joyous",
+      "cancellationpage"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/events/programmier-gruppe/2018-08-06-cancellation/",
+    "owner": [
+      "bocian67"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2018-08-06T14:06:59.157Z",
+    "last_published_at": "2018-08-06T14:06:59.157Z",
+    "latest_revision_created_at": "2018-08-06T14:06:59.002Z",
+    "live_revision": 29
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 20,
+  "fields": {
+    "path": "000100010007",
+    "depth": 3,
+    "numchild": 0,
+    "title": "Infrastruktur",
+    "draft_title": "Infrastruktur",
+    "slug": "infrastruktur",
+    "content_type": [
+      "general",
+      "infrastrukturpage"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/infrastruktur/",
+    "owner": [
+      "bocian67"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2018-08-20T16:36:16.755Z",
+    "last_published_at": "2018-08-20T16:36:16.755Z",
+    "latest_revision_created_at": "2018-08-20T16:36:16.596Z",
+    "live_revision": 30
+  }
+},
+{
+  "model": "wagtaildocs.document",
+  "pk": 1,
+  "fields": {
+    "collection": 1,
+    "title": "Mitgliedsantrag",
+    "file": "documents/mitgliedsantrag-2017-09-30.pdf",
+    "created_at": "2018-05-13T19:56:49.397Z",
+    "uploaded_by_user": [
+      "bocian67"
+    ]
+  }
+},
+{
+  "model": "wagtaildocs.document",
+  "pk": 2,
+  "fields": {
+    "collection": 1,
+    "title": "Satzung",
+    "file": "documents/satzung-2017-07-02.pdf",
+    "created_at": "2018-05-13T20:01:53.593Z",
+    "uploaded_by_user": [
+      "bocian67"
+    ]
+  }
+},
+{
+  "model": "wagtaildocs.document",
+  "pk": 3,
+  "fields": {
+    "collection": 1,
+    "title": "Satzung",
+    "file": "documents/Satzung.tex",
+    "created_at": "2018-05-13T20:02:20.152Z",
+    "uploaded_by_user": [
+      "bocian67"
+    ]
+  }
+},
+{
+  "model": "wagtaildocs.document",
+  "pk": 4,
+  "fields": {
+    "collection": 1,
+    "title": "Gesch\u00e4ftsordnung",
+    "file": "documents/geschaeftsordnung-2017-06-21.pdf",
+    "created_at": "2018-05-13T20:03:33.132Z",
+    "uploaded_by_user": [
+      "bocian67"
+    ]
+  }
+},
+{
+  "model": "wagtaildocs.document",
+  "pk": 5,
+  "fields": {
+    "collection": 1,
+    "title": "Gesch\u00e4ftsordnung",
+    "file": "documents/Gesch\u00e4ftsordnung.tex",
+    "created_at": "2018-05-13T20:06:08.464Z",
+    "uploaded_by_user": [
+      "bocian67"
+    ]
+  }
+},
+{
+  "model": "wagtaildocs.document",
+  "pk": 8,
+  "fields": {
+    "collection": 1,
+    "title": "Protokoll #003",
+    "file": "documents/vorstandssitzung-2017-07-23.pdf",
+    "created_at": "2018-05-13T20:11:28.699Z",
+    "uploaded_by_user": [
+      "bocian67"
+    ]
+  }
+},
+{
+  "model": "wagtaildocs.document",
+  "pk": 9,
+  "fields": {
+    "collection": 1,
+    "title": "Protokoll #003",
+    "file": "documents/vorstandssitzung-2017-07-23.tex",
+    "created_at": "2018-05-13T20:12:08.910Z",
+    "uploaded_by_user": [
+      "bocian67"
+    ]
+  }
+},
+{
+  "model": "wagtaildocs.document",
+  "pk": 10,
+  "fields": {
+    "collection": 1,
+    "title": "Protokoll #002",
+    "file": "documents/vorstandssitzung-2017-07-02.pdf",
+    "created_at": "2018-05-13T20:13:11.163Z",
+    "uploaded_by_user": [
+      "bocian67"
+    ]
+  }
+},
+{
+  "model": "wagtaildocs.document",
+  "pk": 11,
+  "fields": {
+    "collection": 1,
+    "title": "Protokoll #002",
+    "file": "documents/vorstandssitzung-2017-07-02.tex",
+    "created_at": "2018-05-13T20:13:30.208Z",
+    "uploaded_by_user": [
+      "bocian67"
+    ]
+  }
+},
+{
+  "model": "wagtaildocs.document",
+  "pk": 12,
+  "fields": {
+    "collection": 1,
+    "title": "Protokoll #001",
+    "file": "documents/vorstandssitzung-2017-06-21.pdf",
+    "created_at": "2018-05-13T20:14:32.771Z",
+    "uploaded_by_user": [
+      "bocian67"
+    ]
+  }
+},
+{
+  "model": "wagtaildocs.document",
+  "pk": 13,
+  "fields": {
+    "collection": 1,
+    "title": "Protokoll #001",
+    "file": "documents/vorstandssitzung-2017-06-21.tex",
+    "created_at": "2018-05-13T20:14:49.658Z",
+    "uploaded_by_user": [
+      "bocian67"
+    ]
+  }
+},
+{
+  "model": "wagtaildocs.document",
+  "pk": 14,
+  "fields": {
+    "collection": 1,
+    "title": "Protokoll #002",
+    "file": "documents/vorstandssitzung-2017-07-02_UPSpKmA.tex",
+    "created_at": "2018-05-13T20:17:10.010Z",
+    "uploaded_by_user": [
+      "bocian67"
+    ]
+  }
+},
+{
+  "model": "joyous.calendarpage",
+  "pk": 9,
+  "fields": {
+    "intro": "<p>Das sind die Events der dezentrale</p>"
+  }
+},
+{
+  "model": "joyous.cancellationpage",
+  "pk": 16,
+  "fields": {
+    "overrides": 11,
+    "except_date": "2018-07-09",
+    "cancellation_title": "Urlaub bis einschlie\u00dflich 23. Juli",
+    "cancellation_details": "<p>Wieder zur\u00fcck zum 30. Juli</p>"
+  }
+},
+{
+  "model": "joyous.cancellationpage",
+  "pk": 17,
+  "fields": {
+    "overrides": 11,
+    "except_date": "2018-07-16",
+    "cancellation_title": "Urlaub bis einschlie\u00dflich 23. Juli",
+    "cancellation_details": "<p>Zur\u00fcck am 30. Juli</p>"
+  }
+},
+{
+  "model": "joyous.cancellationpage",
+  "pk": 18,
+  "fields": {
+    "overrides": 11,
+    "except_date": "2018-07-23",
+    "cancellation_title": "Urlaub bis einschlie\u00dflich 23. Juli",
+    "cancellation_details": "<p>Zur\u00fcck am 30. Juli</p>"
+  }
+},
+{
+  "model": "joyous.cancellationpage",
+  "pk": 19,
+  "fields": {
+    "overrides": 11,
+    "except_date": "2018-08-06",
+    "cancellation_title": "Ausfall am 06.08.2018",
+    "cancellation_details": "<p></p>"
+  }
+},
+{
+  "model": "joyous.recurringeventpage",
+  "pk": 10,
+  "fields": {
+    "category": null,
+    "image": null,
+    "time_from": "19:00:00",
+    "time_to": "21:30:00",
+    "tz": "UTC",
+    "group_page": null,
+    "details": "<p></p>",
+    "location": "Dezentrale e.V",
+    "website": "http://www.dezentrale.space",
+    "repeat": "DTSTART:20180502\nRRULE:FREQ=MONTHLY;WKST=SU;UNTIL=20180926;BYDAY=+1WE"
+  }
+},
+{
+  "model": "joyous.recurringeventpage",
+  "pk": 11,
+  "fields": {
+    "category": null,
+    "image": null,
+    "time_from": "19:00:00",
+    "time_to": "21:30:00",
+    "tz": "UTC",
+    "group_page": null,
+    "details": "<p>Gemeinsam programmieren wir, wenn du Lust hast mitzumachen, komm einfach vorbei! Gerade haben wir eine Fokus auf Python.</p>",
+    "location": "Dezentrale e.V",
+    "website": "http://www.dezentrale.space",
+    "repeat": "DTSTART:20180507\nRRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20180924;BYDAY=MO"
+  }
+},
+{
+  "model": "joyous.recurringeventpage",
+  "pk": 12,
+  "fields": {
+    "category": null,
+    "image": null,
+    "time_from": "19:00:00",
+    "time_to": "21:00:00",
+    "tz": "UTC",
+    "group_page": null,
+    "details": "<p>Wir basteln! Egal ob Arduino, 3D-Drucker, Elektronik oder Raspberry Pi, hier kommt alles auf den Tisch, unkompliziert und einsteigerfreundlich.</p>",
+    "location": "Dezentrale e.V",
+    "website": "http://www.dezentrale.space",
+    "repeat": "DTSTART:20180501\nRRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20180925;BYDAY=TU"
+  }
+},
+{
+  "model": "joyous.recurringeventpage",
+  "pk": 13,
+  "fields": {
+    "category": null,
+    "image": null,
+    "time_from": "19:00:00",
+    "time_to": "21:00:00",
+    "tz": "UTC",
+    "group_page": null,
+    "details": "<p>Selbsthilfewerkstatt f\u00fcr Technikproblem geplagte - Reparieren statt Wegwerfen</p>",
+    "location": "Dezentrale e.V",
+    "website": "http://www.dezentrale.space",
+    "repeat": "DTSTART:20180503\nRRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20180927;BYDAY=TH"
+  }
+},
+{
+  "model": "general.datenschutzpage",
+  "pk": 14,
+  "fields": {
+    "content": "[{\"value\": \"<p></p><h2>Datenschutzerkl\\u00e4rung</h2><p>Die Nutzung unserer Seite ist ohne eine Angabe von personenbezogenen Daten m\\u00f6glich. F\\u00fcr die Nutzung einzelner Services unserer Seite k\\u00f6nnen sich hierf\\u00fcr abweichende Regelungen ergeben, die in diesem Falle nachstehend gesondert erl\\u00e4utert werden. Ihre personenbezogenen Daten (z.B. Name, Anschrift, E-Mail, Telefonnummer, u.\\u00e4.) werden von uns nur gem\\u00e4\\u00df den Bestimmungen des deutschen Datenschutzrechts verarbeitet. Daten sind dann personenbezogen, wenn sie eindeutig einer bestimmten nat\\u00fcrlichen Person zugeordnet werden k\\u00f6nnen. Die rechtlichen Grundlagen des Datenschutzes finden Sie im Bundesdatenschutzgesetz (BDSG) und dem Telemediengesetz (TMG). Nachstehende Regelungen informieren Sie insoweit \\u00fcber die Art, den Umfang und Zweck der Erhebung, die Nutzung und die Verarbeitung von personenbezogenen Daten durch den Anbieter</p><p>dezentrale e.V., <a href=\\\"https://www.openstreetmap.org/way/41760585\\\">Dreilindenstra\\u00dfe 19, 04177 Leipzig</a></p><p>(0221) 596193719</p><p>vorstand@dezentrale.space</p><p>Wir weisen darauf hin, dass die internetbasierte Daten\\u00fcbertragung Sicherheitsl\\u00fccken aufweist, ein l\\u00fcckenloser Schutz vor Zugriffen durch Dritte somit unm\\u00f6glich ist.</p><h4>Kontaktm\\u00f6glichkeit</h4><p>Wir bieten Ihnen auf unserer Seite die M\\u00f6glichkeit, mit uns per E-Mail und/oder \\u00fcber ein Kontaktformular in Verbindung zu treten. In diesem Fall werden die vom Nutzer gemachten Angaben zum Zwecke der Bearbeitung seiner Kontaktaufnahme gespeichert. Eine Weitergabe an Dritte erfolgt nicht. Ein Abgleich der so erhobenen Daten mit Daten, die m\\u00f6glicherweise durch andere Komponenten unserer Seite erhoben werden, erfolgt ebenfalls nicht.</p><h3>Auskunft/Widerruf/L\\u00f6schung</h3><p>Sie k\\u00f6nnen sich aufgrund des Bundesdatenschutzgesetzes bei Fragen zur Erhebung, Verarbeitung oder Nutzung Ihrer personenbezogenen Daten und deren Berichtigung, Sperrung, L\\u00f6schung oder einem Widerruf einer erteilten Einwilligung unentgeltlich an uns wenden. Wir weisen darauf hin, dass Ihnen ein Recht auf Berichtigung falscher Daten oder L\\u00f6schung personenbezogener Daten zusteht, sollte diesem Anspruch keine gesetzliche Aufbewahrungspflicht entgegenstehen.</p><p><a href=\\\"https://www.ratgeberrecht.eu/leistungen/muster-datenschutzerklaerung.html\\\">Muster-Datenschutzerkl\\u00e4rung</a> der <a href=\\\"https://www.ratgeberrecht.eu/\\\">Anwaltskanzlei Wei\\u00df &amp; Partner</a></p>\", \"id\": \"6ef67895-c632-4f22-b361-2ce64228995d\", \"type\": \"Datenschutzerklaerung\"}]"
+  }
+},
+{
+  "model": "general.impressumpage",
+  "pk": 5,
+  "fields": {
+    "content": "[{\"value\": \"<p>Created with: <a href=\\\"http://fontawesome.io\\\">Font Awesome</a> 4.6.3 by @davegandy - @fontawesome</p>\", \"id\": \"3ed20bf0-c799-42c0-b9cf-4daca73ee0ab\", \"type\": \"Used\"}]"
+  }
+},
+{
+  "model": "general.dokumentepage",
+  "pk": 4,
+  "fields": {
+    "content": "[{\"value\": \"<p><a id=\\\"1\\\" linktype=\\\"document\\\">Mitgliedsantrag</a></p>\", \"id\": \"88720313-6569-4e5a-baed-e3195a251e47\", \"type\": \"Mitgliedsantrag\"}, {\"value\": \"<p>Satzung - revision 2017-07-02 <a id=\\\"2\\\" linktype=\\\"document\\\">(PDF)</a> <a id=\\\"3\\\" linktype=\\\"document\\\">(TeX source)</a></p>\", \"id\": \"e710c1a0-c7f7-4deb-80c1-0aaabb99917a\", \"type\": \"Misc\"}, {\"value\": \"<p>Gesch\\u00e4ftsordnung - revision 2017-06-21 <a id=\\\"4\\\" linktype=\\\"document\\\">(PDF)</a> <a id=\\\"5\\\" linktype=\\\"document\\\">(TeX source)</a></p>\", \"id\": \"3131b300-499e-4859-98f6-a74d206d4de7\", \"type\": \"Misc\"}, {\"value\": \"<p>Protokoll, Vorstandssitzung #003 - 2017-07-23 <a id=\\\"8\\\" linktype=\\\"document\\\">(PDF)</a> <a id=\\\"9\\\" linktype=\\\"document\\\">(TeX source)</a></p>\", \"id\": \"24acdcfb-e5fb-4ba9-87f7-e4c0a774442e\", \"type\": \"Protokoll\"}, {\"value\": \"<p>Protokoll, Vorstandssitzung #002 - 2017-07-02 <a id=\\\"10\\\" linktype=\\\"document\\\">(PDF)</a> <a id=\\\"14\\\" linktype=\\\"document\\\">(TeX source)</a></p>\", \"id\": \"18dc4e76-db71-43d3-bc85-afc4de907d56\", \"type\": \"Protokoll\"}, {\"value\": \"<p>Protokoll, Vorstandssitzung #001 - 2017-06-21 <a id=\\\"12\\\" linktype=\\\"document\\\">(PDF)</a> <a id=\\\"13\\\" linktype=\\\"document\\\">(TeX source)</a></p>\", \"id\": \"bc7386a0-d650-43d9-8479-59ef1aa858fe\", \"type\": \"Protokoll\"}]"
+  }
+},
+{
+  "model": "general.infrastrukturpage",
+  "pk": 20,
+  "fields": {
+    "content": "[{\"value\": \"Dezentrale Infrastruktur\", \"id\": \"c1699321-93fa-419b-8f1b-12b20206548e\", \"type\": \"heading\"}, {\"value\": \"<p>Needs Work</p>\", \"id\": \"24865422-4ced-4794-9ee3-3fa7d540ab23\", \"type\": \"paragraph\"}]"
+  }
+},
+{
+  "model": "general.giropage",
+  "pk": 6,
+  "fields": {
+    "content": "-----BEGIN PGP SIGNED MESSAGE-----\r\nHash: SHA256\r\n\r\nKontoinhaber:  dezentrale\r\nIBAN:  DE48 8605 5592 1090 1699 29\r\nSparkasse Leipzig (BIC:  WELADE8L)\r\n\r\n-----BEGIN PGP SIGNATURE-----\r\nVersion: GnuPG v1\r\n\r\niQGcBAEBCAAGBQJZagr2AAoJEIzTM2ydu2Cc0GML+wa9sji3YK55txUfqPYvN7Xd\r\n3EvaEYZkpuXGTRGKL8KZNwK5ptOvpNVVpLUfQBwF3cFL8ftJuI9WUTBLPtJFJVkZ\r\nW3K48nVlQ6vssKSQxDMnCjsOoytz087kayjQ+uo1wwTKHxQJCEpZly4hnITQDMMS\r\nJsVrZ45uclulREwWQYeMqGF4eow/gk3Y4G0AWXB4o9jGbfxUN8Nhk/URij7ycmUW\r\nSXlj++w+g657poyiy3niQs3OT0JG8seLTUac/EkKJ42e+ZyuiIJUtfhDpG8V/GaU\r\n86aUafpTCDkaCKkcaHLrRtOQ165Q3aJfMFV0WfQr8A50yhWhCXavEa7Zxis4NqFb\r\n9vUHDwmOKSmQsQ4pJnavWh3WaUgM/eLw+rKben0PL42rsKMMKhY4vEQdXpD10iTs\r\no0rgCpHoRTAOnY9W8WWOL4Bt2gp1/oS4jYD46bFPT3hllYanoze9SC0TRqYURS+E\r\nqVMNqme4dmS3E6jNBr4fpgB2V6Exn3NKGauPA45nvw==\r\n=WoI7\r\n-----END PGP SIGNATURE-----"
+  }
+},
+{
+  "model": "home.homepage",
+  "pk": 3,
+  "fields": {}
+}
+]
