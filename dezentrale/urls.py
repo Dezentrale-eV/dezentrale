@@ -6,10 +6,11 @@ from wagtail.core import urls as wagtail_urls
 from wagtail.documents import urls as wagtaildocs_urls
 from django.urls import path, re_path, include
 from search import views as search_views
-
+from events import views as event_view
 urlpatterns = [
     re_path(r'^$', generic_views.TemplateView.as_view(template_name='landing_page.html'),
         name='landing_page'),
+    re_path(r'^api/', event_view.getEvents, name='Events'),
     # Wagtail
     re_path(r'^admin/', include(wagtailadmin_urls)),
     re_path(r'^documents/', include(wagtaildocs_urls)),
