@@ -2081,21 +2081,10 @@
 
 	.image {
 		border: 0;
-		display: inline-block;
-		position: relative;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
 	}
-
-		.image img {
-			display: block;
-		}
-
-		.image.left, .image.right {
-			max-width: 40%;
-		}
-
-			.image.left img, .image.right img {
-				width: 100%;
-			}
 
 		.image.left {
 			float: left;
@@ -2122,16 +2111,6 @@
 		.image.round img {
 			border-radius: 100%;
 		}
-
-		.image.main {
-			display: block;
-			margin: 0 0 3em 0;
-			width: 100%;
-		}
-
-			.image.main img {
-				width: 100%;
-			}
 
 /* List */
 
