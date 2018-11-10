@@ -167,7 +167,7 @@ JOYOUS_DEFAULT_EVENTS_VIEW = "Monthly"
 
 ALLOWED_HOSTS = [
 	'127.0.0.1',
-        'localhost',
+    'localhost',
 	'.localtunnel.me',
 	'176.9.69.238',
 	]
