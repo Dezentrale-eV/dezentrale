@@ -173,6 +173,7 @@ SITE_ID = 1
 BASE_URL = 'www.dezentrale.space'
 
 JOYOUS_DEFAULT_EVENTS_VIEW = "Monthly"
+JOYOUS_DAY_OF_WEEK_START = "Monday" # Only supported by recent versions of Joyous
 
 ALLOWED_HOSTS = [
     '127.0.0.1',
@@ -183,3 +184,4 @@ ALLOWED_HOSTS = [
 
 WIKI_ACCOUNT_HANDLING = True
 WIKI_ACCOUNT_SIGNUP_ALLOWED = False
+WIKI_CHECK_SLUG_URL_AVAILABLE = False
