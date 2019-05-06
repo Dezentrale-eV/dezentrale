@@ -1,12 +1,66 @@
 {% extends 'base.html' %}
 {% load static %}
+<!--{% load static wagtailcore_tags %}--> <!-- verwendet?? -->
+<!-- {% load wagtailcore_tags i18n %}-->  <!-- verwendet?? -->
+ <!--{% load joyous_tags %} -->  <!-- verwendet??, korrekt?? -->
 {% block content %}
+
+
+	  <!-- Banner Section -->
+    <section id="banner">
+        <div class="content">
+
+            <!-- <h1>Dezentrale </h1> -->
+			<h2>- Hackerspace, Elektrotechnik und Projekte -</h2>
+            <p>
+              Die Dezentrale ist ein gemeinschaftlich verwalteter Ort,<br>
+              an dem technologisch interessierte Menschen zusammenkommen, <br>
+			  um voneinander zu lernen und an
+              Projekten zu basteln.
+            </p>
+            <ul class="actions">
+                <li><a href="#one" class="button scrolly">Mehr über uns...</a></li>
+            </ul>
+
+		
+			
+        </div>
+    </section>
+	
+	<!-- Aktuelle Termine -->
+	<section class="wrapper"> 
+	<center>
+		<!-- <h3>Aktuelle Termine:</h3>
+		all_upcoming_events:
+		{% block body %}
+			{% all_upcoming_events %}
+		{% endblock %} -->
+		
+		<!-- events_this_week: -->
+		<h3>Aktuelle Termine: </h3>
+		{% block body2 %}
+			{% events_this_week %}
+		{% endblock %}
+		
+		
+		
+		<!-- minicalendar:
+		{% block body3 %}
+			{% minicalendar %}
+		{% endblock %} -->
+		
+	</section> 
+
     <!-- Keywords / Introduction and Logo -->
     <section id="one" class="wrapper">
+	<center>
+	<h2>Unsere Interessen und Aktivitäten</h2>
+	</center>
         <div class="inner flex flex-3">
+
             <div class="flex-item left">
                 <div>
-                    <h3>(hardware)</h3>
+                    <h3>Hardware</h3>
                     <p>
                       Hardware kann repariert, zerlegt und wieder neu zusammen gesetzt werden.
                       Der Drucker muss kein Bürogerät bleiben,
@@ -14,10 +68,10 @@
                     </p>
                 </div>
                 <div>
-                    <h3>(soziales)</h3>
+                    <h3>Soziales</h3>
                     <p>
                       Zusammen etwas zu verwirklichen ist eine gute Sache.
-                      Sich auszutauschen und voneinander zu lernen bringt am Ende alle weiter,
+                      Sich auszutauschen und voneinander zu lernen bringt am Ende alle weiter
                       und sogar Minecraft macht gemeinsam mehr Spaß.
                     </p>
                 </div>
@@ -27,40 +81,25 @@
             </div>
             <div class="flex-item right">
                 <div>
-                    <h3>(netzpolitik)</h3>
+                    <h3>Netzpolitik</h3>
                     <p>
-                      Die Auswirkungen der Digitalisierung auf die Gesellschaft werden immer Umfassender.
+                      Die Auswirkungen der Digitalisierung auf die Gesellschaft werden immer umfassender.
                       Eine kritische Auseinandersetzung mit den Potenzialen und Gefahren der sich ausbildenden
                       Informationsgesellschaft ist notwendig.
                     </p>
                 </div>
                 <div>
-                    <h3>(software)</h3>
+                    <h3>Software</h3>
                     <p>
                       Wenn die Programme unser Umfeld strukturieren,
-                      sollten wir diejenigen sein die sie schreiben.
+                      sollten wir diejenigen sein, die sie schreiben.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Banner Section -->
-    <section id="banner">
-        <div class="content">
-
-            <h1>Dezentrale. Hackerspace. WTF?!</h1>
-            <p>
-              Die Dezentrale ist ein gemeinschaftlich verwalteter Ort,<br>
-              an dem technologisch interessierte Menschen zusammen kommen können um voneinander zu lernen und an
-              Projekten zu basteln.
-            </p>
-            <ul class="actions">
-                <li><a href="#one" class="button scrolly">Mehr über uns...</a></li>
-            </ul>
-
-        </div>
-    </section>
+  
 
     <!-- Three picture boxes section -->
     <section id="three" class="wrapper">
@@ -101,7 +140,7 @@
                     <p>
                       Die Dezentrale wird von der Dezentrale e.V. verwaltet.
                       Wir freuen uns immer über neue Mitglieder*innen!
-                      Schau doch einfach mal vorbei oder schreib uns ne Mail.
+                      Schau doch einfach mal vorbei oder schreib uns eine Mail.
                     </p>
                 </div>
             </div>

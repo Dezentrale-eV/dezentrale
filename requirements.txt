@@ -1,5 +1,5 @@
 Django>=2.1,<2.2
 wagtail>=2.3,<2.4
-ls.joyous==0.3.5
+ls.joyous==0.8.2
 wiki==0.4.4
 flake8
