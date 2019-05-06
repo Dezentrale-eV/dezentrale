@@ -14,7 +14,7 @@ urlpatterns = [
 	re_path(r'^dokumente/', generic_views.TemplateView.as_view(template_name='dokumente.html'), name='dokumente'),
 	re_path(r'^infrastruktur/', generic_views.TemplateView.as_view(template_name='infrastruktur.html'), name='infrastruktur'),
 	re_path(r'^impressum/', generic_views.TemplateView.as_view(template_name='impressum.html'), name='impressum'),
-	re_path(r'^girokonto/', generic_views.TemplateView.as_view(template_name='Giro.html'), name='girokonto'),
+	re_path(r'^girokonto/', generic_views.TemplateView.as_view(template_name='giro.html'), name='girokonto'),
 	re_path(r'^wiki/', include('wiki.urls')),
 	#re_path(r'^events/', generic_views.TemplateView.as_view(template_name='dokumente.html'), name='dokumente'),
     # Wagtail
