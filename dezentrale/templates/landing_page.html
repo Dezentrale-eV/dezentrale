@@ -2,7 +2,9 @@
 {% load static %}
 <!--{% load static wagtailcore_tags %}--> <!-- verwendet?? -->
 <!-- {% load wagtailcore_tags i18n %}-->  <!-- verwendet?? -->
- <!--{% load joyous_tags %} -->  <!-- verwendet??, korrekt?? -->
+<!--  {% load joyous_tags %}-->  <!-- verwendet??, korrekt?? -->
+<!-- {% load event_tags %} -->
+{% load div_tags %}
 {% block content %}
 
 
@@ -35,17 +37,21 @@
 		{% block body %}
 			{% all_upcoming_events %}
 		{% endblock %} -->
-		
-		<!-- events_this_week: -->
-		<h3>Aktuelle Termine: </h3>
+
+<!--		<h3>Diese Woche: </h3>
 		{% block body2 %}
-			{% events_this_week %}
+            {% events_this_week_alt %} &lt;!&ndash; alternative Version from app events &ndash;&gt;
+		{% endblock %}-->
+
+        <h3>Aktuelle Termine in den nächsten 10 Tagen: </h3>
+		{% block body3 %}
+            {% events_ten_days_alt %} <!-- alternative Version from app events -->
 		{% endblock %}
-		
+
 		
 		
 		<!-- minicalendar:
-		{% block body3 %}
+		{% block body4 %}
 			{% minicalendar %}
 		{% endblock %} -->
 		

@@ -1,0 +1,12 @@
+{% load static %}
+{% include "joyous/includes/minicalendar.html" %}
+{% if calendarUrl %}
+<script src="{% static 'joyous/js/minicalendar.js' %}"></script>
+<script>
+  // JQuery is not available yet
+  document.addEventListener('DOMContentLoaded', function() {
+    var calendar = new MiniCalendar('{{ calendarUrl }}', {{ year }}, {{ month }});
+    calendar.enable();
+  });
+</script>
+{% endif %}
