@@ -97,3 +97,21 @@ createsuperuser:
 
 collectstatic:
 	python3 manage.py collectstatic
+
+# dump local data from sqlite db into json file
+# excludes login sessions as well as users.
+#
+dumpdb:
+	python3 manage.py dumpdata --verbosity 3 --indent=2 --exclude=auth.user --exclude=sessions --output fixtures/full.json
+
+# resets database and loads the `full` fixture from the
+# `fixtures` folder.
+# TODO/tim: Check if we really need a full reset
+# I am not sure, if the reset / clean is really the best idea, since `dumpdb` excludes auth.user, we could
+# leave everything as it is, but this needs to be tested with additional data being used and potential conflicts.
+# For now this should avoid any kind of conflict.
+resetdb:
+	rm -rf db.sqlite3
+	make migrate
+	make createsuperuser
+	python3 manage.py loaddata --verbosity 3 fixtures/full.json
