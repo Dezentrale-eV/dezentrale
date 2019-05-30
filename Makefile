@@ -102,7 +102,16 @@ collectstatic:
 # excludes login sessions as well as users.
 #
 dumpdb:
-	python3 manage.py dumpdata --verbosity 3 --indent=2 --exclude=auth.user --exclude=sessions --output fixtures/full.json
+	python3 manage.py dumpdata \
+		--natural-foreign \
+		--verbosity 3 \
+		--indent=2 \
+		--exclude=contenttypes \
+		--exclude=auth.user \
+		--exclude=auth.permission \
+		--exclude=sessions \
+		--output \
+		fixtures/full.json
 
 # resets database and loads the `full` fixture from the
 # `fixtures` folder.
