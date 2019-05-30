@@ -1,0 +1,8 @@
+version: '3'
+services:
+  dezentrale:
+    image: dezentrale:latest
+    volumes:
+      - .:/app
+    ports:
+      - 8080:8080
