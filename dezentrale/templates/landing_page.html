@@ -1,16 +1,18 @@
 {% extends 'base.html' %}
 {% load static %}
-<!--{% load static wagtailcore_tags %}--> <!-- verwendet?? -->
-<!-- {% load wagtailcore_tags i18n %}-->  <!-- verwendet?? -->
-<!--  {% load joyous_tags %}-->  <!-- verwendet??, korrekt?? -->
-<!-- {% load event_tags %} -->
+{% comment %}
+    {% load static wagtailcore_tags %} <!-- verwendet?? -->
+    {% load joyous_tags %}  <!-- verwendet??, korrekt?? -->
+    {% load wagtailcore_tags i18n %}
+{% endcomment %}
+{% load event_tags %}
 {% load div_tags %}
 {% block content %}
 
 
-	  <!-- Banner Section -->
+    <!-- Banner Section -->
     <section id="banner">
-        <div class="content">
+        <div>
 
             <!-- <h1>Dezentrale </h1> -->
 			<h2>- Hackerspace, Elektrotechnik und Projekte -</h2>
@@ -24,24 +26,32 @@
                 <li><a href="#one" class="button scrolly">Mehr über uns...</a></li>
             </ul>
 
-		
-			
+
+
         </div>
     </section>
 	
 	<!-- Aktuelle Termine -->
 	<section class="wrapper"> 
 	<center>
-		<!-- <h3>Aktuelle Termine:</h3>
-		all_upcoming_events:
-		{% block body %}
-			{% all_upcoming_events %}
-		{% endblock %} -->
+        {% comment %}
+             <h3>Aktuelle Termine:</h3>
+            all_upcoming_events:
+            {% block body %}
+                {% all_upcoming_events %}
+            {% endblock %}
 
-<!--		<h3>Diese Woche: </h3>
-		{% block body2 %}
-            {% events_this_week_german %} &lt;!&ndash; alternative Version from app events &ndash;&gt;
-		{% endblock %}-->
+
+            <h3>Diese Woche: </h3>
+            {% block body2 %}
+                {% events_this_week_german %} &lt;!&ndash; alternative Version from app events &ndash;&gt;
+            {% endblock %}
+
+            minicalendar:
+            {% block body4 %}
+			    {% minicalendar %}
+		    {% endblock %} -->
+        {% endcomment %}
 
         <h3>Aktuelle Termine in den nächsten 10 Tagen: </h3>
 		{% block body3 %}
@@ -50,10 +60,7 @@
 
 		
 		
-		<!-- minicalendar:
-		{% block body4 %}
-			{% minicalendar %}
-		{% endblock %} -->
+
 		
 	</section> 
 

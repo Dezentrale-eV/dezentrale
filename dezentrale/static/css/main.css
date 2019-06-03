@@ -2601,6 +2601,12 @@
 
 		}
 
+/*content_padding*/
+
+    .content_padding{ /**/
+        padding: 0em 2em 0em 2em
+    }
+
 /* Wrapper */
 
 	.wrapper {
@@ -2961,7 +2967,6 @@
 			#banner {
 				padding: 2em 0 2em 0;
 			}
-
 		}
 
 		@media screen and (max-width: 980px) {
@@ -3005,7 +3010,6 @@
 				#banner .button {
 					font-size: .9em;
 				}
-
 		}
 
 		body.is-loading #banner .content {
