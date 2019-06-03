@@ -10,13 +10,11 @@ from events import views as event_view
 urlpatterns = [
     re_path(r'^$', generic_views.TemplateView.as_view(template_name='landing_page.html'), name='landing_page'),
     re_path(r'^api/', event_view.getEvents, name='events'),
-	#re_path(r'^dokumente/', generic_views.TemplateView.as_view(template_name='dokumente.html'), name='events'),
 	re_path(r'^dokumente/', generic_views.TemplateView.as_view(template_name='dokumente.html'), name='dokumente'),
 	re_path(r'^infrastruktur/', generic_views.TemplateView.as_view(template_name='infrastruktur.html'), name='infrastruktur'),
 	re_path(r'^impressum/', generic_views.TemplateView.as_view(template_name='impressum.html'), name='impressum'),
 	re_path(r'^girokonto/', generic_views.TemplateView.as_view(template_name='giro.html'), name='girokonto'),
 	re_path(r'^wiki/', include('wiki.urls')),
-	#re_path(r'^events/', generic_views.TemplateView.as_view(template_name='dokumente.html'), name='dokumente'),
     # Wagtail
     re_path(r'^admin/', include(wagtailadmin_urls)),
     re_path(r'^documents/', include(wagtaildocs_urls)),
