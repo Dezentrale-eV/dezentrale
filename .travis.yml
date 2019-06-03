@@ -1,0 +1,11 @@
+language: python
+python:
+  - "3.6"
+# command to install dependencies
+install:
+  - make develop
+  - make migrate
+  - make runserver
+# command to run tests
+script:
+  - make test
