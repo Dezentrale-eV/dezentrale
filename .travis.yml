@@ -5,6 +5,7 @@ python:
 install:
   - make develop
   - make migrate
+  - make runserver
 # command to run tests
 script:
   - make test
