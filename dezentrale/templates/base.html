@@ -7,7 +7,6 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="{% static 'css/main.css' %}" />
-    <link rel="stylesheet" href="{% static 'joyous/css/joyous.css' %}" />
     <link rel="icon" 
       type="image/png" 
       href="{% static 'images/hex.png' %}">
@@ -19,24 +18,32 @@
       <a href="#menu"><span>Menu</span></a>
     </nav>
     <a href="/" class="logo">dezentraLE</a>
-    <img src="/api/status.php" style="float: right; padding: 1em;" />
+      <img src="/api/status.php" style="float: right; padding: 1em;"/>
         <!-- <nav class="right">
       <a href="https://status.dezentrale.space" class="button alt">Status</a>
     </nav> -->
+	<br>
+	<a href="/events">Termine</a>
+	 &vert; <a href="/infrastruktur/">Infrastruktur</a>
+	 &vert; <a href="/dokumente/">Dokumente</a>
+	 &vert; <a href="/girokonto/">Konto</a>
+	 &vert; <a href="/impressum/">Impressum</a>
   </header>
 
   <nav id="menu">
     <ul class="links">
-        <li><a href="/">Start</a></li>
+        <li><a href="/">Home</a></li>
+		<li><a href="/events">Termine</a></li>
+		<!-- https://dezentrale.space/infrastruktur -->
+        <li><a href="/infrastruktur">Infrastruktur</a></li>
         <!-- https://dezentrale.space/dokumente -->
         <li><a href="/dokumente">Dokumente</a></li>
-        <!-- https://dezentrale.space/infrastruktur -->
-        <li><a href="/infrastruktur">Infrastruktur</a></li>
-        <!-- https://dezentrale.space/impressum -->
-        <li><a href="/impressum">Impressum</a></li>
         <!-- https://dezentrale.space/girokonto -->
         <li><a href="/girokonto">Konto</a></li>
-	<li><a href="/events">Events</a></li>
+        <!-- https://dezentrale.space/impressum -->
+        <li><a href="/impressum">Impressum</a></li>
+        
+		
     </ul>
   </nav>
 

@@ -1,0 +1,37 @@
+{% load wagtailcore_tags joyous_tags i18n %}
+
+<div class="events-this-week">
+  <div class="events">
+    {% for evod in events %}
+      <div class="day{% if evod.date < today %} in-past{% elif evod.date == today %} today{% endif %}">
+        <div class="event-day" {% if evod.date == today %}title={% trans "Today" %}{% endif %}>
+            <b>{{evod.date|date:"l"}}</b>
+            {{evod.date|date:"j. M"}}
+        </div>
+        <div class="days-events">
+          {% if evod.holiday %}
+            <div class="holiday">
+              {{ evod.holiday }}
+            </div>
+          {% endif %}
+          {% for title, event, url in evod.continuing_events %}
+            <a href="{{ url }}" class="event event-continues">
+                {{title}} {% trans "cont." %}
+            </a>
+          {% endfor %}
+          {% for title, event, url in evod.days_events %}
+            <a href="{{ url }}" class="event">
+              {{event.at}}
+              {{title}}
+            </a>
+          {% endfor %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  {% if calendarUrl %}
+  <div class="calendar-link">
+    <a href="{{ calendarUrl }}">{{ calendarName }}</a>
+  </div>
+  {% endif %}
+</div>

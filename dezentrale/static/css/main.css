@@ -1664,7 +1664,7 @@
 		}
 
 	strong, b {
-		color: #727a82;
+		color: #000000;
 		font-weight: 700;
 	}
 
@@ -1677,7 +1677,7 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #727a82;
+		color: #000000;
 		font-weight: 700;
 		font-family: "Montserrat", sans-serif;
 		line-height: 1.5;
@@ -2385,8 +2385,8 @@
 		cursor: pointer;
 		display: inline-block;
 		font-family: "Montserrat", sans-serif;
-		height: 3.5em;
-		line-height: 3.5em;
+		height: 2.5em;
+		line-height: 2.5em;
 		padding: 0 3.5em;
 		text-align: center;
 		text-decoration: none;
@@ -2399,7 +2399,7 @@
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #f78a76;
+			background-color: #000000;
 		}
 
 		input[type="submit"]:active,
@@ -2604,7 +2604,7 @@
 /* Wrapper */
 
 	.wrapper {
-		padding: 6em 0 4em 0;
+		padding: 3em 0 3em 0;
 	}
 
 		.wrapper h1, .wrapper h2, .wrapper h3, .wrapper h4, .wrapper h5 {
@@ -2643,7 +2643,7 @@
 /* Header */
 
 	body {
-		padding-top: 6em;
+		padding-top: 5em;
 	}
 
 	#header {
@@ -2653,33 +2653,44 @@
 		align-items: center;
 		background: #fff;
 		cursor: default;
-		height: 6em;
+		height: 5em;
 		left: 0;
-		line-height: 6em;
+		line-height: 1.5em;
 		position: fixed;
 		top: 0;
 		width: 100%;
 		z-index: 10001;
 		box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.075);
 		text-align: center;
+		background-color: black;
+		padding-top: 1em;
+		color: white;
 	}
+	
+	/*Links*/
+	#header a {
+			color: white;
+			/*text-decoration: none;*/
+		}
 @font-face {
 	font-family: 'PocoUltra';
 	src: url('../fonts/PocoUltra.TTF');
 }
 		#header .logo {
-			color: #000000;
+			color: white; /*#000000;*/
 			font-family: PocoUltra, Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, 'sans-serif' ;
-			font-size: 2.5em;
+			font-size: 2em;
 			letter-spacing: 2px;
-			margin-top: -5px;
+			margin-top: -10px;
+			margin-bottom: -30px;
 			text-decoration: none;
-			display: inline-block;
+			text-align: center;
+			/* display: inline-block; */
 		}
 
 		#header nav {
 			position: absolute;
-			top: 0;
+			top: 1.5em;
 			height: inherit;
 			line-height: inherit;
 		}
@@ -2732,17 +2743,17 @@
 	@media screen and (max-width: 980px) {
 
 		body {
-			padding-top: 44px;
+			padding-top: 5em;
 		}
 
 		#header {
-			height: 44px;
-			line-height: 44px;
+			height: 5em;
+			line-height: 1.5em;
 		}
 
 			#header .logo {
 				font-size: 1.25em;
-				text-align: center;
+				text-align: left;
 			}
 
 			#header nav a[href="#menu"] {
@@ -2904,7 +2915,7 @@
 /* Banner */
 
 	#banner {
-		padding: 14em 0 12em 0;
+		padding: 2em 0 2em 0;
 		background-image: url(../images/banner.jpg);
 		z-index: -2;
 		background-size: cover;
@@ -2914,16 +2925,24 @@
 	}
 
 		#banner .content {
-			-moz-transition: opacity 1s ease-in-out, -moz-transform 0.75s ease-in-out;
-			-webkit-transition: opacity 1s ease-in-out, -webkit-transform 0.75s ease-in-out;
-			-ms-transition: opacity 1s ease-in-out, -ms-transform 0.75s ease-in-out;
-			transition: opacity 1s ease-in-out, transform 0.75s ease-in-out;
-			opacity: 1;
+			/* -moz-transition: opacity 0.0s ease-in-out, -moz-transform 0.0s ease-in-out;
+			-webkit-transition: opacity 0.0s ease-in-out, -webkit-transform 0.0s ease-in-out;
+			-ms-transition: opacity 0.0s ease-in-out, -ms-transform 0.0s ease-in-out;
+			transition: opacity 0.0s ease-in-out, transform 0.0s ease-in-out;
+			*/
+			/*opacity: 1; */
 		}
 
 		#banner h1 {
 			font-size: 3em;
-			color: #000001;
+			color: white;
+			line-height: 1em;
+			margin: 0 0 0.5em 0;
+			padding: 0;
+		}
+		
+		#banner h2 {
+			color: white;
 			line-height: 1em;
 			margin: 0 0 0.5em 0;
 			padding: 0;
@@ -2931,13 +2950,16 @@
 
 		#banner p {
 			font-size: 1.25em;
+			line-height: 1.25em;
 			margin-bottom: 1.75em;
+			color: white;
+			/* font-weight: bold; */
 		}
 
 		@media screen and (max-width: 1280px) {
 
 			#banner {
-				padding: 12em 0 10em 0;
+				padding: 2em 0 2em 0;
 			}
 
 		}
@@ -2945,7 +2967,7 @@
 		@media screen and (max-width: 980px) {
 
 			#banner {
-				padding: 8em 6em 6em 6em;
+				padding: 2em 6em 2em 6em;
 			}
 
 				#banner br {
@@ -2961,7 +2983,7 @@
 		@media screen and (max-width: 736px) {
 
 			#banner {
-				padding: 6em 4em 4em 4em;
+				padding: 2em 4em 2em 4em;
 			}
 
 		}
@@ -2969,7 +2991,7 @@
 		@media screen and (max-width: 480px) {
 
 			#banner {
-				padding: 4em 2em 2em 2em;
+				padding: 2em 2em 2em 2em;
 			}
 
 				#banner h1 {
