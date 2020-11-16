@@ -1,3 +1,6 @@
+# dezentrale Website, archived
+Unfortunately nobody was able to build and host a website based on Django 3 in several evening sessions. This was due to many factors, but most of all to the fact that professional Django hosting takes time. Installing and running a Wordpress turned out to be a lower entry barrier at some point.
+
 # dezentrale Website
 The new Website, based on the dezentrale_web project, but renewed with python3.
 
